@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: >
+  If you use this work in academic research, please cite it using the
+  metadata below. Full attribution is required in all cases.
+  See LICENSE for copyright terms.
+
+title: >
+  From Cipher to Shadow: A Unified Theoretical Framework for Information
+  Security from Its Epistemic Origins to the Architecture of the Dark Web
+
+authors:
+  - family-names: Plesca
+    given-names: Ciprian Stefan
+    orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+
+type: thesis
+thesis-type: "Doctoral Dissertation"
+department: "Department of Electrical Engineering and Computer Science"
+year: 2024
+
+abstract: >
+  This dissertation proposes a novel unified theoretical framework for
+  information security — the Entropic Threat Continuum (ETC) — that traces
+  the discipline from its earliest conceptual antecedents in pre-mathematical
+  secrecy to the contemporary architecture of anonymous overlay networks,
+  including the Dark Web. The framework introduces five original theoretical
+  constructs: the Adversarial Entropy Gradient (AEG), the Trust Decay
+  Function (TDF), the Dark Topology Conjecture (DTC), the Layered Anonymity
+  Stack (LAS), and the Threat Surface Integral (TSI). Empirical contributions
+  include a corpus analysis of 12,000+ historical ciphers, a graph-theoretic
+  model of Tor network topology, and the Plesca Taxonomy of 847 discrete
+  attack primitive types.
+
+keywords:
+  - information security
+  - cryptography
+  - dark web
+  - anonymity networks
+  - Tor
+  - threat modeling
+  - cybersecurity theory
+  - adversarial systems
+  - network topology
+  - privacy engineering
+  - Entropic Threat Continuum
+  - onion routing
+  - post-quantum cryptography
+
+license: "LicenseRef-all-rights-reserved"
+repository-code: "https://github.com/CiprianPlesca/from-cipher-to-shadow"
+
+preferred-citation:
+  type: thesis
+  thesis-type: "Doctoral Dissertation"
+  authors:
+    - family-names: Plesca
+      given-names: Ciprian Stefan
+  title: >
+    From Cipher to Shadow: A Unified Theoretical Framework for Information
+    Security from Its Epistemic Origins to the Architecture of the Dark Web
+  year: 2024
+  department: "Department of Electrical Engineering and Computer Science"

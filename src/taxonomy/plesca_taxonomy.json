@@ -1,0 +1,410 @@
+{
+  "_meta": {
+    "title": "Plesca Taxonomy of Attack Primitives",
+    "source": "From Cipher to Shadow (Plesca, 2024), Chapter 10 and Appendix C",
+    "copyright": "© 2024 Ciprian Stefan Plesca. All Rights Reserved.",
+    "license": "See /LICENSE in repository root. All rights reserved.",
+    "citation": "Plesca, C. S. (2024). From cipher to shadow [Doctoral dissertation]. Chapter 10.",
+    "version": "1.0.0",
+    "total_primitives": 847,
+    "axes": ["CEA", "AIA", "ICA"],
+    "levels": ["Physical", "Logical", "Social", "Combinatorial"],
+    "complexity_tiers": ["Low", "Medium", "High", "Nation-State"],
+    "note": "This file contains the high-level taxonomy structure. Full definitions of all 847 attack primitive types are available in the supplementary technical report."
+  },
+  "axes": {
+    "CEA": {
+      "name": "Confidentiality-Exposure Axis",
+      "objective": "Obtain information that should not be available to the adversary",
+      "description": "Attacks on the CEA aim to breach the boundary between authorized and unauthorized access to information.",
+      "primary_defenses": ["Encryption", "Access control", "Traffic analysis resistance", "Data minimization"]
+    },
+    "AIA": {
+      "name": "Authentication-Impersonation Axis",
+      "objective": "Subvert mechanisms by which systems and users verify identity",
+      "description": "Attacks on the AIA aim to forge, bypass, or degrade authentication, allowing adversaries to assume false identities.",
+      "primary_defenses": ["Multi-factor authentication", "Certificate pinning", "Behavioral analytics", "Identity verification protocols"]
+    },
+    "ICA": {
+      "name": "Integrity-Corruption Axis",
+      "objective": "Introduce false information or corrupt existing information",
+      "description": "Attacks on the ICA aim to modify data, code, or system state in ways that serve adversarial goals.",
+      "primary_defenses": ["Code signing", "Cryptographic MACs", "Input validation", "Immutable audit logs"]
+    }
+  },
+  "primitives": {
+    "CEA": {
+      "Physical": [
+        {
+          "code": "CEA-P-01",
+          "name": "TEMPEST / electromagnetic emanation interception",
+          "complexity": "High",
+          "description": "Exploiting electromagnetic emissions from electronic equipment to recover processed data without physical contact.",
+          "primary_defense": "RF shielding (EMSEC/TEMPEST standards), Faraday enclosures"
+        },
+        {
+          "code": "CEA-P-02",
+          "name": "Acoustic cryptanalysis",
+          "complexity": "High",
+          "description": "Recovering cryptographic keys or processed data from sounds produced by computing equipment during operation.",
+          "primary_defense": "Acoustic isolation, randomized computation, sound masking"
+        },
+        {
+          "code": "CEA-P-03",
+          "name": "Cold boot attack",
+          "complexity": "Medium",
+          "description": "Recovery of encryption keys from DRAM modules after power loss by freezing memory to extend data remanence.",
+          "primary_defense": "Full memory encryption, rapid key erasure on power loss, Secure Enclave / TrustZone"
+        },
+        {
+          "code": "CEA-P-04",
+          "name": "Power analysis (SPA/DPA)",
+          "complexity": "High",
+          "description": "Inferring cryptographic secrets from power consumption variations during cryptographic operations.",
+          "primary_defense": "Constant-time implementations, power line filtering, balanced logic cells"
+        },
+        {
+          "code": "CEA-P-05",
+          "name": "Optical emanation recovery",
+          "complexity": "High",
+          "description": "Recovering screen content from optical emanations (e.g., LED activity, reflected light from keyboards).",
+          "primary_defense": "Physical shielding, optical isolation"
+        },
+        {
+          "code": "CEA-P-06",
+          "name": "Dumpster diving",
+          "complexity": "Low",
+          "description": "Recovery of sensitive information from discarded physical documents or storage media.",
+          "primary_defense": "Shredding policies, secure disposal procedures, clear desk policy"
+        },
+        {
+          "code": "CEA-P-07",
+          "name": "Direct physical storage access",
+          "complexity": "Low",
+          "description": "Physical theft or unauthorized access to storage devices (laptops, drives, servers).",
+          "primary_defense": "Full-disk encryption, remote wipe capability, physical security controls"
+        }
+      ],
+      "Logical": [
+        {
+          "code": "CEA-L-01",
+          "name": "Network eavesdropping",
+          "complexity": "Low",
+          "description": "Passive interception of network traffic to capture plaintext or weakly protected communications.",
+          "primary_defense": "End-to-end encryption (TLS 1.3+), VPN"
+        },
+        {
+          "code": "CEA-L-02",
+          "name": "Man-in-the-middle (MITM) interception",
+          "complexity": "Medium",
+          "description": "Active interposition between communicating parties to intercept and optionally modify communications.",
+          "primary_defense": "Certificate pinning, HSTS preloading, mutual TLS"
+        },
+        {
+          "code": "CEA-L-03",
+          "name": "Traffic analysis",
+          "complexity": "High",
+          "description": "Extraction of information from observable communication properties (timing, volume, frequency) without decryption.",
+          "primary_defense": "Traffic shaping, padding, mix networks, cover traffic"
+        },
+        {
+          "code": "CEA-L-04",
+          "name": "Timing side-channel attack",
+          "complexity": "High",
+          "description": "Inferring secret values from variations in computation time during cryptographic or security-sensitive operations.",
+          "primary_defense": "Constant-time cryptographic implementations"
+        },
+        {
+          "code": "CEA-L-05",
+          "name": "Cache side-channel attack (Spectre/Meltdown class)",
+          "complexity": "High",
+          "description": "Exploiting shared CPU cache state to extract data from processes with higher privilege or different security domains.",
+          "primary_defense": "Microarchitectural mitigations, process isolation, site isolation in browsers"
+        },
+        {
+          "code": "CEA-L-06",
+          "name": "SQL injection (data exfiltration)",
+          "complexity": "Medium",
+          "description": "Injection of malicious SQL to extract unauthorized data from a database.",
+          "primary_defense": "Parameterized queries, least-privilege database accounts, WAF"
+        },
+        {
+          "code": "CEA-L-07",
+          "name": "Directory traversal / path injection",
+          "complexity": "Medium",
+          "description": "Manipulation of file path references to access files outside the intended directory.",
+          "primary_defense": "Input validation, path canonicalization, sandboxing"
+        },
+        {
+          "code": "CEA-L-08",
+          "name": "API key / credential exfiltration",
+          "complexity": "Medium",
+          "description": "Extraction of API keys, tokens, or credentials from code, configuration files, or environment variables.",
+          "primary_defense": "Secrets management systems, pre-commit credential scanning, environment isolation"
+        }
+      ],
+      "Social": [
+        {
+          "code": "CEA-S-01",
+          "name": "Phishing (credential/data harvest)",
+          "complexity": "Low",
+          "description": "Deceptive electronic communication designed to manipulate recipients into disclosing credentials or sensitive data.",
+          "primary_defense": "MFA, email filtering, security awareness training"
+        },
+        {
+          "code": "CEA-S-02",
+          "name": "Pretexting",
+          "complexity": "Medium",
+          "description": "Impersonation of a trusted party to manipulate an individual into disclosing information.",
+          "primary_defense": "Callback verification procedures, identity verification protocols"
+        },
+        {
+          "code": "CEA-S-03",
+          "name": "Shoulder surfing",
+          "complexity": "Low",
+          "description": "Direct observation of a user's screen, keyboard, or other input to capture sensitive information.",
+          "primary_defense": "Privacy screens, clear desk policy, user awareness"
+        },
+        {
+          "code": "CEA-S-04",
+          "name": "OSINT aggregation",
+          "complexity": "Low",
+          "description": "Passive collection and correlation of publicly available information to derive security-sensitive intelligence.",
+          "primary_defense": "Data minimization, employee privacy awareness, minimal public footprint policy"
+        }
+      ],
+      "Combinatorial": [
+        {
+          "code": "CEA-C-01",
+          "name": "Hardware supply chain compromise",
+          "complexity": "Nation-State",
+          "description": "Compromise of hardware components during manufacturing or distribution to provide covert access or exfiltration capability.",
+          "primary_defense": "Trusted hardware supply chain, component verification, hardware attestation"
+        },
+        {
+          "code": "CEA-C-02",
+          "name": "Software supply chain compromise",
+          "complexity": "Nation-State",
+          "description": "Compromise of software build systems, dependencies, or distribution infrastructure to inject malicious code at scale.",
+          "primary_defense": "SBOM, code signing, reproducible builds, dependency pinning"
+        },
+        {
+          "code": "CEA-C-03",
+          "name": "Advanced persistent threat (APT) exfiltration",
+          "complexity": "Nation-State",
+          "description": "Long-term, covert infiltration of high-value targets for systematic intelligence collection.",
+          "primary_defense": "Defense in depth, EDR, network behavioral monitoring, threat intelligence"
+        }
+      ]
+    },
+    "AIA": {
+      "Physical": [
+        {
+          "code": "AIA-P-01",
+          "name": "Biometric spoofing",
+          "complexity": "Medium",
+          "description": "Use of fabricated biometric artifacts (fake fingerprints, face masks, iris prints) to defeat biometric authentication.",
+          "primary_defense": "Liveness detection, multi-modal biometrics, continuous authentication"
+        },
+        {
+          "code": "AIA-P-02",
+          "name": "RFID cloning",
+          "complexity": "Low",
+          "description": "Cloning of RFID-based access credentials (badge, card, fob) for unauthorized physical access.",
+          "primary_defense": "Cryptographic RFID (MIFARE DESFire), challenge-response protocols"
+        },
+        {
+          "code": "AIA-P-03",
+          "name": "Hardware token theft",
+          "complexity": "Low",
+          "description": "Physical theft of hardware authentication tokens (FIDO2 keys, OTP generators).",
+          "primary_defense": "PIN-protected tokens, remote invalidation capability"
+        }
+      ],
+      "Logical": [
+        {
+          "code": "AIA-L-01",
+          "name": "Password brute force",
+          "complexity": "Low",
+          "description": "Systematic trial of all possible password combinations until the correct one is found.",
+          "primary_defense": "Account lockout, CAPTCHA, MFA, strong password requirements"
+        },
+        {
+          "code": "AIA-L-02",
+          "name": "Dictionary attack",
+          "complexity": "Low",
+          "description": "Password attack using precomputed lists of common passwords, words, and variations.",
+          "primary_defense": "Salted hashing (Argon2id, bcrypt), MFA, breach credential monitoring"
+        },
+        {
+          "code": "AIA-L-03",
+          "name": "Credential stuffing",
+          "complexity": "Medium",
+          "description": "Automated use of leaked credential pairs from other breaches to access accounts on target services.",
+          "primary_defense": "MFA, breach credential monitoring (HaveIBeenPwned API), bot detection"
+        },
+        {
+          "code": "AIA-L-04",
+          "name": "Session hijacking",
+          "complexity": "Medium",
+          "description": "Theft or forgery of session tokens to impersonate authenticated users.",
+          "primary_defense": "Secure/HttpOnly cookies, session token binding, short session lifetimes"
+        },
+        {
+          "code": "AIA-L-05",
+          "name": "OAuth token abuse",
+          "complexity": "Medium",
+          "description": "Exploitation of OAuth flows or stolen access tokens to gain unauthorized access to resources.",
+          "primary_defense": "Minimal token scopes, short-lived tokens, refresh token rotation"
+        },
+        {
+          "code": "AIA-L-06",
+          "name": "Kerberos ticket forgery (Golden/Silver ticket)",
+          "complexity": "High",
+          "description": "Forgery of Kerberos tickets using compromised KRBTGT key material to impersonate any user in a domain.",
+          "primary_defense": "Protected Users security group, Privileged Access Workstations, KRBTGT rotation"
+        }
+      ],
+      "Social": [
+        {
+          "code": "AIA-S-01",
+          "name": "Help desk impersonation",
+          "complexity": "Low",
+          "description": "Impersonation of a legitimate user to convince help desk staff to reset credentials or grant access.",
+          "primary_defense": "Callback verification, manager approval, identity verification protocols"
+        },
+        {
+          "code": "AIA-S-02",
+          "name": "SIM swapping",
+          "complexity": "Medium",
+          "description": "Social engineering of mobile carriers to transfer a victim's phone number to an attacker-controlled SIM.",
+          "primary_defense": "SIM lock / carrier PIN, hardware authentication tokens instead of SMS OTP"
+        },
+        {
+          "code": "AIA-S-03",
+          "name": "Business email compromise (BEC) impersonation",
+          "complexity": "High",
+          "description": "Impersonation of executives or trusted parties to authorize fraudulent transactions or access.",
+          "primary_defense": "Out-of-band verification, dual approval for financial transactions"
+        }
+      ],
+      "Combinatorial": [
+        {
+          "code": "AIA-C-01",
+          "name": "Certificate authority compromise",
+          "complexity": "Nation-State",
+          "description": "Compromise of a trusted certificate authority to issue fraudulent certificates for arbitrary domains (DigiNotar 2011 pattern).",
+          "primary_defense": "CAA DNS records, Certificate Transparency monitoring, multi-path validation"
+        },
+        {
+          "code": "AIA-C-02",
+          "name": "Authentication hardware seed theft",
+          "complexity": "Nation-State",
+          "description": "Theft of cryptographic seed material from hardware token manufacturers (RSA SecurID 2011 pattern).",
+          "primary_defense": "Air-gapped seed storage, hardware security modules, post-compromise rotation"
+        }
+      ]
+    },
+    "ICA": {
+      "Physical": [
+        {
+          "code": "ICA-P-01",
+          "name": "Hardware implant (firmware modification)",
+          "complexity": "Nation-State",
+          "description": "Physical insertion of malicious hardware or persistent firmware modification to enable covert access or sabotage.",
+          "primary_defense": "Firmware attestation, Secure Boot, hardware supply chain security"
+        },
+        {
+          "code": "ICA-P-02",
+          "name": "Physical record modification",
+          "complexity": "Low",
+          "description": "Direct physical alteration of paper records, labels, or other physical information artifacts.",
+          "primary_defense": "Physical security controls, tamper-evident materials, access logs"
+        }
+      ],
+      "Logical": [
+        {
+          "code": "ICA-L-01",
+          "name": "SQL injection (data modification)",
+          "complexity": "Medium",
+          "description": "Injection of malicious SQL to insert, update, or delete database records.",
+          "primary_defense": "Parameterized queries, WAF, database integrity constraints, audit logging"
+        },
+        {
+          "code": "ICA-L-02",
+          "name": "Cross-site scripting (XSS)",
+          "complexity": "Medium",
+          "description": "Injection of malicious scripts into web pages served to other users, enabling content modification and data theft.",
+          "primary_defense": "Content Security Policy, output encoding, input validation"
+        },
+        {
+          "code": "ICA-L-03",
+          "name": "DNS poisoning",
+          "complexity": "High",
+          "description": "Corruption of DNS cache entries to redirect DNS queries to attacker-controlled servers.",
+          "primary_defense": "DNSSEC, DNS-over-HTTPS/TLS, source port randomization"
+        },
+        {
+          "code": "ICA-L-04",
+          "name": "BGP hijacking",
+          "complexity": "High",
+          "description": "Announcement of false BGP routes to reroute internet traffic through attacker-controlled infrastructure.",
+          "primary_defense": "RPKI (Resource Public Key Infrastructure), BGPsec, route origin monitoring"
+        },
+        {
+          "code": "ICA-L-05",
+          "name": "Software update mechanism compromise",
+          "complexity": "High",
+          "description": "Compromise of software update infrastructure to distribute malicious updates to large populations.",
+          "primary_defense": "Code signing with hardware-protected keys, update integrity verification, staged rollouts"
+        },
+        {
+          "code": "ICA-L-06",
+          "name": "Log tampering",
+          "complexity": "Medium",
+          "description": "Modification or deletion of audit logs to conceal attacker activity or introduce false records.",
+          "primary_defense": "Write-once logs, remote log shipping, cryptographic log integrity (append-only)"
+        }
+      ],
+      "Social": [
+        {
+          "code": "ICA-S-01",
+          "name": "Deliberate misinformation campaigns",
+          "complexity": "Medium",
+          "description": "Coordinated injection of false information into organizational decision-making processes or public information channels.",
+          "primary_defense": "Source verification, information provenance tracking, information governance policy"
+        },
+        {
+          "code": "ICA-S-02",
+          "name": "Insider data manipulation",
+          "complexity": "Medium",
+          "description": "Intentional corruption of data by an authorized insider for financial, competitive, or ideological gain.",
+          "primary_defense": "Separation of duties, dual-control for critical data, behavioral monitoring, audit trails"
+        }
+      ],
+      "Combinatorial": [
+        {
+          "code": "ICA-C-01",
+          "name": "Software supply chain attack (SolarWinds pattern)",
+          "complexity": "Nation-State",
+          "description": "Compromise of a widely-deployed software package's build or distribution system to inject malicious code delivered as a legitimate update to thousands of organizations simultaneously.",
+          "primary_defense": "SBOM, build integrity attestation, network monitoring for anomalous traffic from trusted software"
+        },
+        {
+          "code": "ICA-C-02",
+          "name": "Cryptographic standard subversion (BULLRUN/Dual_EC pattern)",
+          "complexity": "Nation-State",
+          "description": "Introduction of weaknesses into cryptographic standards or reference implementations to create exploitable backdoors in widely-deployed systems.",
+          "primary_defense": "Open standards processes, cryptographic agility, diverse independent implementations, formal verification"
+        },
+        {
+          "code": "ICA-C-03",
+          "name": "AI training data poisoning",
+          "complexity": "High",
+          "description": "Corruption of training data or fine-tuning inputs to introduce systematic biases, backdoors, or degraded security properties into machine learning models used in security applications.",
+          "primary_defense": "Training data provenance tracking, adversarial robustness testing, data sanitization"
+        }
+      ]
+    }
+  }
+}

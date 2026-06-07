@@ -1,0 +1,139 @@
+COPYRIGHT NOTICE AND LICENSE
+
+From Cipher to Shadow: A Unified Theoretical Framework for Information Security
+from Its Epistemic Origins to the Architecture of the Dark Web
+
+Copyright © 2024 Ciprian Stefan Plesca
+All Rights Reserved.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FULL COPYRIGHT RESERVATION
+
+This work — including but not limited to the doctoral dissertation text, all
+theoretical frameworks, mathematical constructs, formal definitions, taxonomies,
+simulation code, datasets, figures, appendices, bibliography, and any associated
+supplementary materials — is the exclusive intellectual property of Ciprian Stefan
+Plesca (hereinafter "the Author").
+
+NO PART OF THIS WORK may be reproduced, distributed, transmitted, adapted,
+translated, transformed, built upon, displayed publicly, or used to create
+derivative works — in any form or by any means, electronic, mechanical,
+photocopying, recording, or otherwise — without the prior, explicit, written
+permission of the Author, except as expressly provided below.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PERMITTED USES (without prior written permission)
+
+The following uses are permitted without requiring prior written permission from
+the Author, provided that proper attribution is given in all cases:
+
+1. ACADEMIC CITATION
+   Researchers, scholars, and students may cite this work in academic publications,
+   theses, dissertations, conference papers, and technical reports, provided that
+   full bibliographic attribution is included in every instance of citation.
+
+2. BRIEF QUOTATION FOR COMMENTARY OR REVIEW
+   Short quotations (not exceeding 200 words per instance, and not exceeding 500
+   words in aggregate within a single work) may be reproduced for the purposes of
+   criticism, commentary, scholarly review, or educational discussion, provided
+   that:
+   (a) the source is fully attributed;
+   (b) the quotation is clearly marked as such;
+   (c) the context is not distorted by selective quotation.
+
+3. PERSONAL EDUCATIONAL USE
+   An individual may download and retain a single copy of this repository for
+   personal, non-commercial educational or research purposes.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXPRESSLY PROHIBITED USES
+
+The following uses are EXPRESSLY PROHIBITED without prior written permission:
+
+1. Reproduction of substantial portions of the dissertation text in any format.
+2. Republication of this work in whole or in part in any journal, book, website,
+   database, or other medium.
+3. Commercial use of any kind, including use in paid courses, training materials,
+   proprietary software, or commercial publications.
+4. Creation of derivative works, including translations, adaptations, summaries
+   intended as substitutes for the original, or works substantially based on the
+   original theoretical frameworks without transformative addition.
+5. Training, fine-tuning, or otherwise using this work as input data for machine
+   learning models, artificial intelligence systems, or automated knowledge
+   extraction systems.
+6. Removal or obscuring of this copyright notice or attribution information.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ORIGINAL THEORETICAL CONTRIBUTIONS — INTELLECTUAL PROPERTY NOTICE
+
+The following theoretical constructs are original intellectual contributions of
+Ciprian Stefan Plesca and are protected as such:
+
+  • Entropic Threat Continuum (ETC) — including all formal axioms, definitions,
+    and the five-tuple formalization (S, A, T, D, E)
+  • Adversarial Entropy Gradient (AEG) — including the formal definition
+    G(s,a) = dH(s)/dE(a) and all associated thermodynamic analysis
+  • Trust Decay Function (TDF) — including the formal model
+    T(c,t) = T(c,0) · exp(−λ(c)·t) · f(B(c,t))
+  • Dark Topology Conjecture (DTC) — including the graph-theoretic conjecture
+    relating algebraic connectivity to k-anonymity bounds
+  • Layered Anonymity Stack (LAS) — the six-layer formal protocol-stack model
+  • Threat Surface Integral (TSI) — the line integral formulation of
+    organizational exposure
+  • Contextual Exposure Principle (CEP) — and its formal proof in Appendix A
+  • Opacity Migration Theorem (OMT) — and its formal statement
+  • Plesca Taxonomy — the three-axis, four-level attack classification system
+    comprising 847 discrete attack primitive types
+  • Three-Tier Stratification of Dark Network Infrastructure
+
+Any academic work that builds upon, extends, critiques, or applies these
+constructs must provide full attribution to this dissertation.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PERMISSIONS AND LICENSING INQUIRIES
+
+To request permission for uses not expressly permitted above, including:
+  — Translation rights
+  — Republication rights
+  — Commercial licensing
+  — Institutional or course adoption
+  — Derivative work authorization
+
+Please contact the Author via the repository's Issues system (tag your issue
+[permissions-request]) or through the contact information on file with the
+repository host.
+
+The Author is committed to supporting legitimate academic and educational use
+and will endeavor to respond to permissions requests within 30 days.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DISCLAIMER OF WARRANTIES
+
+THIS WORK IS PROVIDED "AS IS" FOR ACADEMIC PURPOSES. THE AUTHOR MAKES NO
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. THE
+AUTHOR SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING
+FROM THE USE OR INABILITY TO USE THIS WORK.
+
+The theoretical frameworks and models presented herein are academic contributions
+intended to advance scholarly understanding. They do not constitute professional
+security advice, legal advice, or operational guidance of any kind.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+GOVERNING LAW
+
+This copyright notice shall be governed by and construed in accordance with
+applicable international copyright law, including the Berne Convention for the
+Protection of Literary and Artistic Works, and the national copyright laws of
+Romania and the European Union.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+© 2024 Ciprian Stefan Plesca. All Rights Reserved.
