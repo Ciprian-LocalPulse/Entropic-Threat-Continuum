@@ -10,6 +10,8 @@ License: **MIT**
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](./pyproject.toml)
 [![Tests](https://img.shields.io/badge/Tests-pytest-informational.svg)](./tests)
 
+![From Cipher to Shadow hero artwork](./assets/figures/from-cipher-to-shadow-hero.png)
+
 ## Purpose
 
 This repository turns the dissertation's theoretical work into a complete, inspectable, reusable research package. It contains formal definitions, simulation code, a machine-readable taxonomy, reproducibility scripts, assets, tests, notebooks, and citation metadata.
@@ -135,6 +137,22 @@ Dark Web [Doctoral dissertation].
 ```
 
 Machine-readable citation metadata is available in [`CITATION.cff`](./CITATION.cff), and BibTeX is available in [`citation/bibtex.bib`](./citation/bibtex.bib).
+
+## Support This Research
+
+This work represents years of independent research in information security theory, privacy engineering, anonymity networks, and post-quantum cryptographic transitions. Donations help sustain future publications, simulation infrastructure, open-access dissemination, and academic conference or peer-review costs.
+
+Donation channels:
+
+| Channel | Link / Address |
+|---|---|
+| PayPal | [paypal.me/agentflowenterprise](https://paypal.me/agentflowenterprise) |
+| GitHub Sponsors | [github.com/sponsors/Ciprian-LocalPulse](https://github.com/sponsors/Ciprian-LocalPulse) |
+| Bitcoin (BTC) | `bc1qf3yy0w8z37rwavxpu38wem3yffpanw7wzj32qj` |
+| Ethereum (ETH) | `0x27d9a6a5b8507e6031bb044319410da96222d402` |
+| Bank transfer | Open a GitHub issue tagged `[donation-inquiry]` |
+
+100% of donations received through this repository are allocated to research continuation, open-access dissemination, simulation infrastructure, and academic review or conference activity. See [`DONATE.md`](./DONATE.md) for the full donation policy, institutional support options, and acknowledgement preferences.
 
 ## License
 
