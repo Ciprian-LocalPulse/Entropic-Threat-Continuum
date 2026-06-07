@@ -1,7 +1,7 @@
 # Formal Definitions — ETC Framework Mathematical Reference
 
 > **From:** *From Cipher to Shadow* (Plesca, 2024)  
-> © 2024 Ciprian Stefan Plesca. All Rights Reserved.
+> Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.
 
 This document provides precise mathematical definitions of all original
 theoretical constructs introduced in the dissertation. Proofs of selected
@@ -223,5 +223,5 @@ specification and least rigorous security analysis.
 
 ---
 
-*© 2024 Ciprian Stefan Plesca. All Rights Reserved.*  
+*Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.*  
 *Citation: Plesca, C. S. (2024). From cipher to shadow [Doctoral dissertation].*

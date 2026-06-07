@@ -1,0 +1,6 @@
+code,axis,vulnerability,probability,impact,weight,label
+CEA-L-03,CEA,0.72,0.41,0.80,1.20,Traffic analysis
+AIA-L-03,AIA,0.64,0.58,0.74,1.00,Credential stuffing
+ICA-C-01,ICA,0.47,0.32,0.91,1.50,Supply chain compromise
+CEA-P-04,CEA,0.30,0.12,0.86,0.80,Power analysis
+AIA-S-02,AIA,0.55,0.35,0.62,1.10,SIM swapping

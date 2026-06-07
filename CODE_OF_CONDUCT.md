@@ -1,6 +1,6 @@
 # Code of Conduct
 
-© 2024 Ciprian Stefan Plesca. All Rights Reserved.
+Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.
 
 ---
 
@@ -41,4 +41,4 @@ including Issues, Pull Requests, Discussions, and comments on any of the above.
 
 ---
 
-*© 2024 Ciprian Stefan Plesca. All Rights Reserved.*
+*Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.*

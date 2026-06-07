@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "entropic-threat-continuum"
+version = "1.1.0"
+description = "Research framework and simulations for the Entropic Threat Continuum."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Ciprian Stefan Plesca" }
+]
+dependencies = [
+  "numpy>=1.26.0",
+  "networkx>=3.2.0",
+  "scipy>=1.11.0",
+  "matplotlib>=3.8.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0",
+  "nbformat>=5.9.0"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"

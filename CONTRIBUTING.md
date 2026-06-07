@@ -1,6 +1,6 @@
 # Contributing — Errata, Discussion, and Collaboration
 
-© 2024 Ciprian Stefan Plesca. All Rights Reserved.
+Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.
 
 This is a **read-only academic repository** — the dissertation text itself is
 not open to contributions. However, the scholarly community's engagement with

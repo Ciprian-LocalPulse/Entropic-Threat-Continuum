@@ -1,7 +1,7 @@
 # Glossary of Key Terms and Notation
 
 > **From:** *From Cipher to Shadow* (Plesca, 2024)  
-> © 2024 Ciprian Stefan Plesca. All Rights Reserved.
+> Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.
 
 Terms are defined as used in the ETC framework. Where a term has a standard
 definition in the prior literature that this dissertation adopts without
@@ -262,4 +262,4 @@ and comprehensive logging.
 
 ---
 
-*© 2024 Ciprian Stefan Plesca. All Rights Reserved.*
+*Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.*

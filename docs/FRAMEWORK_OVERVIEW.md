@@ -1,7 +1,7 @@
 # ETC Framework — Technical Overview
 
 > **From:** *From Cipher to Shadow* (Plesca, 2024)  
-> © 2024 Ciprian Stefan Plesca. All Rights Reserved.
+> Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.
 
 ---
 
@@ -205,4 +205,4 @@ Full taxonomy: 847 discrete attack primitive types, each with associated defensi
 
 ---
 
-*© 2024 Ciprian Stefan Plesca. All Rights Reserved. — Full dissertation available via repository.*
+*Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License. Full dissertation available via repository.*

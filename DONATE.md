@@ -98,4 +98,4 @@ the community it serves. Thank you.
 
 ---
 
-*© 2024 Ciprian Stefan Plesca. All Rights Reserved. See [LICENSE](./LICENSE) for full copyright terms.*
+*Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License. See [LICENSE](./LICENSE).*

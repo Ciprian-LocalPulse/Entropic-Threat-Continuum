@@ -2,8 +2,8 @@
   "_meta": {
     "title": "Plesca Taxonomy of Attack Primitives",
     "source": "From Cipher to Shadow (Plesca, 2024), Chapter 10 and Appendix C",
-    "copyright": "© 2024 Ciprian Stefan Plesca. All Rights Reserved.",
-    "license": "See /LICENSE in repository root. All rights reserved.",
+    "copyright": "Copyright (c) 2024 Ciprian Stefan Plesca.",
+    "license": "MIT. See /LICENSE in repository root.",
     "citation": "Plesca, C. S. (2024). From cipher to shadow [Doctoral dissertation]. Chapter 10.",
     "version": "1.0.0",
     "total_primitives": 847,

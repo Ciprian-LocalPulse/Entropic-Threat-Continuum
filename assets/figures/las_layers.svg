@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430">
+  <rect width="760" height="430" fill="#ffffff"/>
+  <text x="380" y="38" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700">Layered Anonymity Stack</text>
+  <g font-family="Arial" font-size="16">
+    <rect x="120" y="70" width="520" height="45" fill="#dbeafe" stroke="#1e40af"/><text x="380" y="98" text-anchor="middle">6. Operational Layer</text>
+    <rect x="120" y="120" width="520" height="45" fill="#dcfce7" stroke="#166534"/><text x="380" y="148" text-anchor="middle">5. Application Layer</text>
+    <rect x="120" y="170" width="520" height="45" fill="#fef3c7" stroke="#92400e"/><text x="380" y="198" text-anchor="middle">4. Routing Layer</text>
+    <rect x="120" y="220" width="520" height="45" fill="#fee2e2" stroke="#991b1b"/><text x="380" y="248" text-anchor="middle">3. Network Layer</text>
+    <rect x="120" y="270" width="520" height="45" fill="#ede9fe" stroke="#5b21b6"/><text x="380" y="298" text-anchor="middle">2. Link Layer</text>
+    <rect x="120" y="320" width="520" height="45" fill="#e2e8f0" stroke="#334155"/><text x="380" y="348" text-anchor="middle">1. Physical Layer</text>
+  </g>
+  <text x="380" y="398" text-anchor="middle" font-family="Arial" font-size="14">Lower-layer failures can propagate upward into anonymity loss.</text>
+</svg>

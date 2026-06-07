@@ -1,7 +1,7 @@
 # Plesca Taxonomy — Reference Guide
 
 > **From:** *From Cipher to Shadow*, Chapter 10 (Plesca, 2024)  
-> © 2024 Ciprian Stefan Plesca. All Rights Reserved.
+> Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.
 
 The Plesca Taxonomy organizes attack primitives along two orthogonal dimensions:
 the **ETC axis targeted** and the **systemic level of the attack**.
@@ -183,4 +183,4 @@ taxonomy over existing frameworks.
 *Low-through-High complexity tiers. Nation-State tier primitives are defined but*
 *not exhaustively listed here.*
 
-*© 2024 Ciprian Stefan Plesca. All Rights Reserved.*
+*Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.*

@@ -1,6 +1,6 @@
 # Security Policy
 
-© 2024 Ciprian Stefan Plesca. All Rights Reserved.
+Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.
 
 ---
 
@@ -75,4 +75,4 @@ standard.
 
 ---
 
-*© 2024 Ciprian Stefan Plesca. All Rights Reserved.*
+*Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.*

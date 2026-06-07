@@ -1,7 +1,7 @@
 # Simulation Code — DTC Empirical Studies
 
 > **From:** *From Cipher to Shadow*, Chapter 22 & Appendix B (Plesca, 2024)  
-> © 2024 Ciprian Stefan Plesca. All Rights Reserved.
+> Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.
 
 This directory contains the Python simulation used to provide empirical support
 for the **Dark Topology Conjecture (DTC)** as described in Chapter 22 and Appendix B
@@ -118,4 +118,4 @@ If you use or extend this simulation, please cite:
 
 ---
 
-*© 2024 Ciprian Stefan Plesca. All Rights Reserved.*
+*Copyright (c) 2024 Ciprian Stefan Plesca. Released under the MIT License.*

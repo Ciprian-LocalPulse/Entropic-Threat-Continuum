@@ -1,7 +1,5 @@
-# Requirements for DTC Simulation
-# From Cipher to Shadow (Plesca, 2024)
-# © 2024 Ciprian Stefan Plesca. All Rights Reserved.
-
 numpy>=1.26.0
 networkx>=3.2.0
 scipy>=1.11.0
+matplotlib>=3.8.0
+pytest>=8.0.0
