@@ -152,6 +152,50 @@ Donation channels:
 | Ethereum (ETH) | `0x27d9a6a5b8507e6031bb044319410da96222d402` |
 | Bank transfer | Open a GitHub issue tagged `[donation-inquiry]` |
 
+EUR transfer
+
+European payments
+Recipient
+Ciprian Stefan Plesca
+IBAN
+BE83 9679 1975 8915
+SWIFT / BIC
+TRWIBEB1XXX
+Bank address
+Wise, Rue du Trône 100, 3rd floor, Brussels, 1050, Belgium
+
+GBP transfer
+
+United Kingdom payments
+Recipient
+Ciprian Stefan Plesca
+Account number
+92055372
+Sort code
+23-14-70
+IBAN
+GB68 TRWI 2314 7092 0553 72
+SWIFT / BIC
+TRWIGB2LXXX
+Bank address
+Wise Payments Limited, 1st Floor, Worship Square, 65 Clifton Street, London, EC2A 4JE, United Kingdom
+
+USD transfer
+
+United States payments
+Recipient
+Ciprian Stefan Plesca
+Account type
+Checking
+Routing number
+026073150
+Account number
+8314225367
+SWIFT / BIC
+CMFGUS33
+Bank address
+Community Federal Savings Bank, 89-16 Jamaica Ave, Woodhaven, NY, 11421, United States
+
 100% of donations received through this repository are allocated to research continuation, open-access dissemination, simulation infrastructure, and academic review or conference activity. See [`DONATE.md`](./DONATE.md) for the full donation policy, institutional support options, and acknowledgement preferences.
 
 ## License
